@@ -1,13 +1,13 @@
 # **CSE15L Lab Report**
 ---
-##1. Installing Visual Studio Code
+## 1. Installing Visual Studio Code
   In order to correctly log into a course-specific account on ieng6, it is essential that you have Visual Studio code set up. 
   In this step, even though I didn't personally do it, but I have VScode already preinstalled not only on my laptop and PC, but also on the PCs in the lab room as well. However, if you don't have VScode pre-installed, you may navigate to the site [link](https://code.visualstudio.com/) to download the coding program after following the instruction on the website and installation application. 
   After having successfully downloaded VScode and installing it. Open it and you will see the welcoming screen similar to:
   ![Image](VS welcome screen.png)
   You may start messing around by closing this page and clicking on the cross-sign. Hoewver, to remotely connect we first have to install Git in Visual studio code. 
 ---
-##2. Remotely Connecting
+## 2. Remotely Connecting
   In this part, you have to download Git first if you are on Windows (which I am). In the lab, I tried to download Git and instaling it. However, installing it in the lab PC would require me using an adiminstrator account, which unfortunately my own CSE15L account couldn't provide, so I checked again in the PC and found out that Git is already pre-installed in the CSE lab computers. However, if you don't have Git, you would follow the link [Link](https://gitforwindows.org/) and download and install Git first for windows.
   After having Git installed, I then used the git bash to open the git-bash terminal instead of the default terminal in VScode. Specifically, follow the reddit post given in the lab instructions, ([Link](https://stackoverflow.com/a/50527994)), I was able to successfully open the git bash terminal. The instruction is as follows (summarized from the Reddit)  :
   1. Using Ctrl + ` key to open the terminal
@@ -35,7 +35,7 @@
   ![Image](remotely connected.png)
   We are now remotely connected to ieng6. 
   
-##3. Trying some commands.
+## 3. Trying some commands.
   This part is fairly simple, I ran some command given in the lab instruction to test out.
   I tried all the command.
   `ls` meant listing the current working directory
