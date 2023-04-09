@@ -1,8 +1,10 @@
-asdf
-*asdf*
-**asdf**
-1. asdf
-2. asdf
-3. asdf
-asdf
+*CSE15L Lab Reports*
+---
+**List of Reports**
+1. Report 1 (Remote connecting and File stream) ([Link](https://l1zhuo.github.io/cse15l-lab-reports/labReport1))
+2.
+3.
+4.
+5.
+
 ---
