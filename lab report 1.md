@@ -1,4 +1,4 @@
-# **CSE15L Lab Repor**
+# **CSE15L Lab Report**
 ---
 ##1. Installing Visual Studio Code
   In order to correctly log into a course-specific account on ieng6, it is essential that you have Visual Studio code set up. 
