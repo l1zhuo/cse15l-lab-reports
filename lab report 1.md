@@ -7,7 +7,9 @@
   In order to correctly log into a course-specific account on ieng6, it is essential that you have Visual Studio code set up. 
   In this step, even though I didn't personally do it, but I have VScode already preinstalled not only on my laptop and PC, but also on the PCs in the lab room as well. However, if you don't have VScode pre-installed, you may navigate to the site [link](https://code.visualstudio.com/) to download the coding program after following the instruction on the website and installation application. 
   After having successfully downloaded VScode and installing it. Open it and you will see the welcoming screen similar to:
+  
   ![Image](VS welcome screen.png)
+  
   You may start messing around by closing this page and clicking on the cross-sign. Hoewver, to remotely connect we first have to install Git in Visual studio code. 
   
 ---
