@@ -63,17 +63,17 @@
   
   `ls` meant listing the current working directory
   
-  'cd' is changing the directory
+  `cd` is changing the directory
   
-  'cat' is printing out the files given the path
+  `cat` is printing out the files given the path
   
-  `ls -a' looks like lists out all files in the directory
+  `ls -a` looks like lists out all files in the directory
   
-  `ls -lat' looks like lists out all files and directories 
+  `ls -lat` looks like lists out all files and directories 
   
   `cp` looks like copies a file
   
-  'cd ~' takes the path to the home directory
+  `cd ~` takes the path to the home directory
   
   I chose `cat /home/linux/ieng6/cs15lsp23/public/hello.txt` and 'ls -lat' to screenshot for the group discussion and here it is.
   
