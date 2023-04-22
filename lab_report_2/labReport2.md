@@ -119,7 +119,7 @@ At the end `wholeList` has the value of `"\n iam\n David"`, and it's returned.
 
 In the end, the value of each member variable in the StringSever class is as follows:
 ```
-ArrayList<String> stringList = {"iam","Davod"};
+ArrayList<String> stringList = {"iam","David"};
 ```
 All other local variables are destroyed when the `handleRequest()` method finished, even though their field variables stay alive in the heap.
 
