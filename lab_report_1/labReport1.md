@@ -77,4 +77,4 @@
   
   I chose `cat /home/linux/ieng6/cs15lsp23/public/hello.txt` and 'ls -lat' to screenshot for the group discussion and here it is.
   
-  ![Image](unning command.png)
+  ![Image](running command.png)
