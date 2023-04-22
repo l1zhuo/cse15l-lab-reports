@@ -10,7 +10,7 @@
   
   After having successfully downloaded VScode and installing it. Open it and you will see the welcoming screen similar to:
   
-  ![Image](cse15l-lab-reports/VS welcome screen.png)
+  ![Image](VS welcome screen.png)
   
   You may start messing around by closing this page and clicking on the cross-sign. Hoewver, to remotely connect we first have to install Git in Visual studio code. 
   
@@ -52,7 +52,7 @@
   
   We follow the same process, but now typing in `ssh l1zhuo@ieng6.ucsd.edu` instead of `ssh cs15lsp23nh@ieng6.ucsd.edu`. and after enterning the paassword as usually, I was able to log on to ieng6. It looked like the image below:
   
-  ![Image](cse15l-lab-reports/remotely connected.png)
+  ![Image](remotely connected.png)
   
   We are now remotely connected to ieng6. 
   
@@ -77,4 +77,4 @@
   
   I chose `cat /home/linux/ieng6/cs15lsp23/public/hello.txt` and 'ls -lat' to screenshot for the group discussion and here it is.
   
-  ![Image](cse15l-lab-reports/running command.png)
+  ![Image](unning command.png)
