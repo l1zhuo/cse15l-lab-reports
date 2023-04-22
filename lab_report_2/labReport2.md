@@ -60,7 +60,7 @@ public class StringServer {
 ![Image](addiam.png)
 ---
 
-1.  In the first screen shot, we are trying to add in the string `"iam"` to the `string arraylist` in the local server. However, before everything heppens, the server was started by calling the `start()` method from the `Server` class and assigning the `int` value of `2000` to the server port from the command line, and creating a new `StringHandler` object. 
+In the first screen shot, we are trying to add in the string `"iam"` to the `string arraylist` in the local server. However, before everything heppens, the server was started by calling the `start()` method from the `Server` class and assigning the `int` value of `2000` to the server port from the command line, and creating a new `StringHandler` object. 
 
 
 Then the `StringHandler` class creates an `String ArrayList` called `stringList` to store all string passed from user when they try to add `String` through entering URL. 
@@ -99,7 +99,7 @@ All other local variables are destroyed when the `handleRequest()` method finish
 ![Image](addDavid.png)
 ---
 
-2. Adding in the String `"David"` is similar to the first part.
+Adding in the String `"David"` is similar to the first part.
 
 
 First, `handleRequest(URI url)` is called, and the `URI` passed in from the `exchange` variable in the `Sever` class is `"http://localhost:2000/add-message?s=David"`.
