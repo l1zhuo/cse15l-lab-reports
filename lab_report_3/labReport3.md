@@ -30,7 +30,7 @@ technical/plos/journal.pbio.0020223.txt:        Watson-Crick base pairing, the p
 
 ```
 
-
+In example 1, the `grep -r` option recursively read through all files in the path `./technical/plos` and returns lines that contain the string `"base pair"`. This is useful because I don't have to manually input every file name as the argument for `grep`, instead I can just use the option to find all line that contain the specific string in `/plos`. 
 
 ### Example 2  ###
 
@@ -50,7 +50,7 @@ $grep -r  "the conclusions" ./technical/plos
 
 ```
 
-In both examples, the `grep -r` option recursively read through all files in the path `./technical/plos` and returns lines that contain the string `"base pair"` (first example) and `"the conclusions"` (second example) in it and the path to the file with that line. This is useful because the `-r` option allows `grep` to take in directories as arguments instead of only files. Also, this allows for quick search in files that may contain the pattern string without specifying which file to look for. 
+Similar to example 1, the `grep -r` option recursively read through all files in the path `./technical/plos` and returns lines that contain the string `"the conclusions"` in it and the path to the file with that line. This is useful because the `-r` option allows `grep` to take in directories as arguments instead of only files. Also, this allows for quick search in files that may contain the pattern string without specifying which file to look for. 
 
 ---
 
@@ -74,6 +74,9 @@ $grep -l "base pair" ./technical/plos/*.txt
 
 ```
 
+`grep -l` option controls the output of a default `grep`. Specifically, it stops the printing of the matched lines (input), but only prints out the path to files with matched lines. This means that in this example, the `grep` outputs all files' path in `/plos` that contain the text `"base pair"`. This is useful because this allows me to quickly check how many files, or which files that contain the string that I am looking for.
+
+
 ### Example 2  ###
 
 
@@ -90,7 +93,7 @@ $grep -l "the conclusions" ./technical/plos/*.txt
 
 ```
 
-`grep -l` option controls the output of a default `grep`. Specifically, it stops the printing of the matched lines (input), but only prints out the path to files with matched lines. This means, in both examples, it prints out only the path to the files that contain the pattern indicated (`"base pair"` in Example 1 and "`the conclusions"` in example 2). This allows us to see how many files contain the matching pattern given a path, and what the path of those files are. 
+Similar to example 1, it prints out only the path to the files that contain the pattern indicated  with "`the conclusions"` . This allows us to see how many files contain the matching pattern given a path, and what the path of those files are without knowing the specific context. 
 
 ---
 
@@ -124,6 +127,9 @@ $ grep -i  "dna" ./technical/plos/*.txt
 
 ```
 
+
+`grep -i` option controls how the `grep` interprets the pattern. It allows the `grep` to ignore case of the pattern when searching for a match. This means in example 1, the `grep` is doing a search for any lines that contain any case combination of `dna`. This is useful because it allows us to do a general search of a word that we don't really care about the case of it. 
+
 ### Example 2  ###
 
 
@@ -137,7 +143,7 @@ $grep -i  "dna and rna" ./technical/plos/*.txt
 
 ```
 
-`grep -i` option controls how the `grep` interprets the pattern. It allows the `grep` to ignore case of the pattern when searching for a match. In example 1, the `grep` ignores the case of `"dna"` and in example 2, ignores the case of "`dna and rna"` to find all matching lines that contain those sequence of alphabets. This is useful because previously, the default `grep` finds the matching lines and output them word for word. However, if we are not looking for the exact match, but just the same phrase, we can use this option to help us search more precisely.
+Similar to example 1, the `grep`ignores the case of "`dna and rna"` to find all matching lines that contain those sequence of alphabets. This is useful because previously, the default `grep` finds the matching lines and output them word for word. However, if we are not looking for the exact match, but just the same phrase, we can use this option to help us search more precisely.
 
 
 ---
@@ -169,6 +175,8 @@ technical/plos/journal.pbio.0020040.txt:0
 
 ```
 
+`grep -c` option moderates the output so it only prints the number of lines that contain the specific pattern in a given file. It prints similarily to the `wc` command, but allows count lines on a specific pattern. In this example, the `grep -c` counts how many lines of each text file contain the matching pattern `"conclusion"` and output it. This is useful because if we are looking for how many times a specific word appeared in a text file, we can do it efficiently with this option without doing `wc` on a file direct of normal `grep`. E.g. `xargs wc < grep "conclusion" technical/plos/*.txt`. 
+
 ### Example 2  ###
 
 
@@ -183,7 +191,7 @@ $$ grep -c "number" technical/plos/pmed.0020242.txt
 
 ```
 
-`grep -c` option moderates the output so it only prints the number of lines that contain the specific pattern in a given file. It prints similarily to the `wc` command, but allows count lines on a specific pattern. In example 1, the command counts all lines in each of the file that contain `"conclusion"`. In the second example, the command counts lines in the file `"pmed.0020242.txt"` that contain the pattern `"number"`. This is useful because we don't have to go through saving the file from `grep` and use `wc` to count number of lines, instead we can quickly do it with `-c` option. 
+In example 2, the command counts number of lines that contain `"number"` in the file `"pmed.0020242.txt"`. This is useful because we don't have to go through saving the file from `grep` and use `wc` to count number of lines, instead we can quickly do it with `-c` option. This is also useful because this is another way for us to see if a string is contained in a file, and I'd say this way is cleaner than just do a normal `grep`.  
 
 ---
 
